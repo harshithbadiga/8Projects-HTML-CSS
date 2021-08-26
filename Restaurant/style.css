@@ -1,0 +1,113 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap");
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    margin: 0;
+}
+header{
+    background-image: url(/10Projects/Restaurant/bg.png);
+    background-size: cover;
+    min-height: 100vh;
+    background-position: center center;
+}
+a{
+    color: white;
+    text-decoration: none;
+}
+.container{
+    margin: 0 auto;
+    width: 1000px;
+    max-width: 100%;
+    padding: 1rem;
+}
+ 
+nav{
+    padding: 0.5rem 0;
+}
+
+
+.pre-nav{
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.7rem;
+    align-items: center;
+
+}
+.logo{
+    color: #026E78;
+    font-weight: bold;
+    font-size: 2rem;
+}
+nav ul{
+    display: flex;
+    list-style: none;
+    padding: 0%;   
+}
+
+nav li{
+    flex: 1 auto;
+}
+
+nav li a{
+    background-color: #2d99a4;
+    padding: 1rem 2rem;
+    text-align: center;
+    display: block;
+}
+nav a.active{
+    background-color: white;
+    color: #026e78;
+    font-weight: bold;
+}
+nav a.hightlight{
+    background-color:#026E78 ;
+    color: white;
+}
+
+nav a:hover{
+    opacity: 0.8;
+}
+
+.content{
+    display: flex;
+    margin-top: 5rem;
+    font-size: 2rem;
+    flex-direction: column;
+    align-items: flex-start;
+
+}
+.content h1{
+    background-color: #026E78;
+    color: white;
+    display: inline-block;
+    padding: 1rem;
+    font-weight: 200;
+}
+.white-link{
+    background-color: white;
+    color: #2d99a4;
+    padding: 1rem;
+}
+.teal-link{
+    background-color: #2d99a4;
+    color: white;
+    padding: 1rem;
+    margin-top: 2rem;
+}
+
+@media screen and (max-width:768px){
+    .pre-nav{
+        flex-direction: column;
+        justify-content: center;
+    }
+    nav ul{
+        flex-direction: column;
+    }
+    .content{
+        font-size: 1.5rem;
+    }
+}

@@ -1,0 +1,126 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap");
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    margin: 0;
+}
+
+.container{
+    width: 1000px;
+    max-width: 100%;
+    margin: 0 auto;
+    
+    
+}
+
+header{
+    background-image: url(/10Projects/tech_support/images/banner.jpeg);
+    background-size: cover;
+    background-position: center center;
+    height: 300px;
+    margin-bottom: 2rem;
+}
+
+.logo{
+    margin-right: 1rem;
+    font-size: 3rem;
+    
+}
+
+.row{
+    display: flex;
+    justify-content: space-between;
+    
+
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    margin: 3rem 0 2rem;
+    font-weight: bold;
+}
+
+.inner-nav{
+    flex: 1;
+   
+}
+
+.big{
+    font-size: 3rem;
+    margin: 0;
+}
+
+.blue{
+    color: #007ff4;
+    font-weight: bold;
+    margin: 0;
+   
+}
+
+nav ul{
+    list-style-type: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+nav a{
+    color: black;
+    text-decoration: none;
+    margin-left: 2rem;
+    font-weight: bold;
+}
+
+nav a.active{
+    color: #007ff4;
+}
+
+.col{
+    padding: 1rem;
+    flex: 1;
+}
+
+.col img{
+   width: 100%;
+}
+
+h3{
+    font-size: 2rem;
+    text-align: center;
+}
+
+.text-center{
+    text-align: center;
+}
+
+button{
+    font-size: 1.5rem;
+    padding: 1rem 2rem;
+    background-color: #007ff4;
+    color: white;
+    border: 0;
+   
+}
+
+@media screen and (max-width:768px){
+
+    .row{
+        flex-direction: column;
+        align-items: center;
+        
+    }
+
+    .logo{
+        margin-left: 1rem;
+    }
+
+    .hidden-mobile{
+        display: none;
+    }
+    
+}

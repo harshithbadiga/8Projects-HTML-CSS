@@ -1,0 +1,83 @@
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap");
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    margin: 0;
+    background-image: url(/10Projects/tourism/images/bg.png);
+    background-position: center center;
+    min-height: 100vh;
+    background-size: cover;
+    display: flex;
+}
+
+aside a{
+    text-decoration: none;
+    color: white;
+    margin: 1rem;
+    font-size: 2rem;
+    display: inline-block;
+}
+
+aside{
+    display: flex;
+    flex-direction: column;
+    width: 15rem;
+    height: 100vh;
+    background-color: black ;
+    justify-content: space-between;
+    color: white;
+   
+    
+}
+
+aside ul{
+    list-style: none;
+    padding: 0px;
+    margin: 0;
+}
+
+aside ul li{
+    padding: 7px;
+}
+
+.special{
+    background-color:#feab51;
+    color: black;
+    padding: 1rem;
+    text-align: center;
+    font-weight: 1em;
+    display: block;
+}
+
+main{
+    font-size: 2.5rem;
+    color: white;
+    padding: 3rem;
+}
+
+
+h1{
+    margin: 0;
+    
+}
+
+h3{
+    color: #feab51;
+    margin: 0;
+}
+
+@media screen  and (max-width:768px) {
+    body{
+        flex-direction: column-reverse;
+    }
+aside{
+    width: 100%;
+    height: auto;
+}
+    
+}
